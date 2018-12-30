@@ -1,0 +1,26 @@
+{
+  "name": "vk-nemesis-lite",
+  "version": "0.1.0",
+  "description": "Защищает фото вашей группы ВК от копирования конкурентами",
+  "repository": "github:nnqq/vk-nemesis-lite",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "eslint": "eslint . --fix --ignore-pattern node_modules/"
+  },
+  "author": "nnqq",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "pino": "^5.10.5",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "resemblejs": "^3.0.0",
+    "vk-io": "^4.0.0-rc.10"
+  },
+  "devDependencies": {
+    "eslint": "^5.11.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
