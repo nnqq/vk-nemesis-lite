@@ -3,6 +3,7 @@ const request = require('request-promise');
 const { VK } = require('vk-io');
 const compareImages = require('resemblejs/compareImages');
 const logger = require('pino')();
+const app = require('express')();
 const event = require('./lib/eventBus');
 const config = require('./lib/config');
 const template = require('./lib/template');
@@ -161,3 +162,8 @@ if (config.useProxy) {
 event.on('compare finished', () => {
   compareNewPhotos();
 });
+
+app.get('/', (req, res) => {
+  res.send('Running');
+});
+app.listen(process.env.PORT || 3000);
