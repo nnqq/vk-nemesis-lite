@@ -76,4 +76,4 @@ npm start
 
 ## Дополнительная информация
 
-Связаться с автором - [Telegram](https://t.me/nn2qq)
+Связаться с автором - [Telegram](https://t.me/aveDenis)
